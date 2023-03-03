@@ -27,6 +27,14 @@ float multiplicacao(float x, float y){
     return conta;
 }
 
+float divisao(float x, float y){
+    float conta;
+
+    conta = x / y;
+
+    return conta;
+}
+
 int main(){
     int op = 1;
     float resultado, x, y;
@@ -36,6 +44,7 @@ int main(){
         printf("(0) Soma.\n");
         printf("(1) Subtracao.\n");
         printf("(2) Multiplicacao.\n");
+        printf("(3) Divisao.\n");
         printf("(4) Sair.\n");
         scanf("%d", &op);
 
@@ -66,6 +75,11 @@ int main(){
         case 2:
             resultado = multiplicacao(x, y);
             printf("%.2f * %.2f = %.2f\n\n", x, y, resultado);
+            break;
+
+        case 3:
+            resultado = divisao(x, y);
+            printf("%.2f / %.2f = %.2f\n\n", x, y, resultado);
             break;
 
         default:
