@@ -59,6 +59,8 @@ int main(){
         printf("Digite o segundo numero: ");
         scanf("%f", &y);
 
+        printf("Numero digitados: %.2f e %.2f\n", x, y);
+
         printf("\n");
 
         switch (op){
